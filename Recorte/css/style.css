@@ -1,17 +1,30 @@
-#lista {color: #6bc7f0 }
-#cuerpo {font-size: 1em:;
-font-family: georgia, "serif"}
+#lista {
+	color: #6bc7f0 
+}
+#cuerpo {
+	font-size: 1em:;
+	font-family: georgia, "serif"
+}
+figure, #lista, #encabezado {
+	margin: 3%;
+}
+figcaption {
+	font-size: 0.8em
+	;
+}
 
-figcaption {font-size: 1em}
+h6 {
+	color: grey
+}
 
-body {box-sizing: border-box;}
-h6 {color: grey}
+a {
+	color: #6bc7f0
+}
 
-a {color: #6bc7f0}
-#lista, #encabezado {margin: 50px}
 
 .bloque1 {
-	position: relative;
-	left:50px;
+	margin: 3%;
 	display:block;
-	width: 850px;}
+	width: 70%;
+	text-align: justify;
+}
