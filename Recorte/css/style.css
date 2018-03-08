@@ -1,11 +1,4 @@
-#lista {
-	color: #6bc7f0 
-}
-#cuerpo {
-	font-size: 1em:;
-	font-family: georgia, "serif"
-}
-figure, #lista, #encabezado {
+figure, .lista, #encabezado {
 	margin: 3%;
 }
 figcaption {
@@ -21,6 +14,10 @@ a {
 	color: #6bc7f0
 }
 
+#cuerpo {
+	font-size: 1em:;
+	font-family: georgia, "serif"
+}
 
 .bloque1 {
 	margin: 3%;
