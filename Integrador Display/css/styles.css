@@ -1,0 +1,57 @@
+/*
+* {
+	margin: 0;
+}
+*/
+* {
+	box-sizing: border-box;
+}
+header {
+	background: black;
+	text-align: center;
+}
+
+a {
+	color: orange;
+}
+img {
+	vertical-align: middle;
+}
+
+.text {display: inline-block;}
+
+.links {
+	text-align: center;
+}
+
+
+.pink {
+	background: violet;
+}
+
+section div.ancho {
+	margin: 10px;
+	width: 47%;
+	height: 400px;
+	display: inline-block; 
+}
+
+nav ul li{
+	display: inline-block;
+}
+
+section div.centro {
+	background: blue;
+	display: inline-block;
+	width: 95.5%;
+	margin: 10px;
+}
+
+section div.base{
+background: green;
+width: 31%;
+height:400px;
+display: inline-block;
+margin: 10px; 
+ }
+
