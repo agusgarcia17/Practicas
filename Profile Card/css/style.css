@@ -1,0 +1,63 @@
+* {
+	box-sizing: border-box;
+}
+
+section{
+	margin: 30%;
+	margin-top: 10%;
+}
+.card {
+	padding: 40px;
+	border-style: solid;
+	border-color: lightblue;
+	width: 400px;
+	height: 800px;
+}
+
+#perfil{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	margin: 50%
+	height: 300px; 
+	width: 300px;
+	border-radius: 160px;
+	border-style:solid;
+	border-width: 10px; 
+	border-color: lightgrey;
+	align-self: middle;	
+}
+
+#nombre{
+	font-family: Lobster, "cursive";
+	color: orange;
+	text-align: center;
+}
+
+#profesion{
+	font-family: Lobster, "cursive";
+	text-align: center;
+	font-size: 1.4em;
+}
+
+#descripcion{ 
+	font-family: Dosis, "sans-serif";
+	text-align: center;
+	margin-top: 50px;
+	font-size: 1.2em;
+} 
+
+.redes {
+	display: inline-block;
+	margin-top: 50px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.icon{ 
+	height: 30px;
+	width: 30px;
+	margin-right:20px;
+	margin-left: 25px;
+	margin-bottom: 40px;
+ }
