@@ -14,7 +14,7 @@ a {
 
 .card {
 	padding: 40px;
-	border-style: solid;
+	border-style: ridge;
 	border-color: lightblue;
 	width: 400px;
 	height: 800px;

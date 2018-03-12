@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<title>Formulario</title>
+</head>
+<body>
+	<div class="Datos">
+		<p> Nombre </p>
+		<input type="text" name="Nombre"> 
+		<p> Apellido </p>
+		<input type="text" name="Apellido"> 
+		<p> Email </p>
+		<input type="text" name="Email">
+	</div>
+	<div class="Genero">
+		<p>Genero</p>		
+		<input type="radio" name="Genero" value="Femenino"> Femenino
+		<input type="radio" name="Genero" value="Masculino"> Masculino
+	<div class="Nacionalidad">
+		<p>Nacionalidad</p>
+		<select name="Nacionalidad">
+			<option value="Argentina">Argentina</option>
+  			<option value="Uruguay">Uruguay</option>
+  			<option value="Brasil">Brasil</option>
+  			<option value="Chile">Chile</option>
+		</select>
+	</div>
+
+	<div class="Temas">
+		<p>Temas que le interesan</p>
+		<ul>
+			<li><input type="checkbox" id="cbox1" name="Infraestructura"> Infraestructura </li>
+			<li><input type="checkbox" id="cbox2" name="Programacion"> Programacion </li>
+			<li><input type="checkbox" id="cbox3" name="Programacion Mobile"> Programacion Mobile </li>
+		</ul>
+	</div>
+	<div class="Terminos">
+		<input type="checkbox" id="cbox4" name="Acepta"> Acepta los terminos y condiciones
+	</div>
+	<div class="acepta">
+		<input type="button" name="cancelar" value="Cancelar"> 
+		<input type="button" name="aceptar" value="Acepto"> 
+	</div>
+</body>
+</html>
