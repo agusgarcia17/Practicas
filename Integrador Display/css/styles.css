@@ -80,8 +80,7 @@ padding: 10px;
 #dog{
 	height: 90px;
 	width: 90px;
-	position: absolute;
-	right: 10%;
+	float: right;
 	vertical-align: middle;
 	padding: 10px, auto;
 }
