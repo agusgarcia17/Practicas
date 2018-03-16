@@ -1,6 +1,9 @@
 *{
 	box-sizing: border-box;
-	margin-left: 10px;
+}
+
+body {
+	margin-left: 20px;
 }
 
 article{
@@ -38,7 +41,7 @@ article.grey {
 
 img#cross1 {
 	position: absolute;
-	left: 280px;
+	left: 270px;
 	top:10px;
 }
 
@@ -50,7 +53,7 @@ img#cross2 {
 
 img#circle {
 	position: absolute;
-	left: 560px;
+	left: 545px;
 	top:7px;
 	width: 250px;
 	height: 250px;
