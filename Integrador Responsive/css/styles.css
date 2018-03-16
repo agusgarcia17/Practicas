@@ -5,6 +5,7 @@
 }
 
 body {
+	background-color: #ffe2f8;
 	padding-top: 20px;
 	font-family:  sans-serif;
 }
@@ -46,6 +47,10 @@ figure {
 	display: inline-block;
 	margin:40px;
 	text-align:center;
+}
+
+figcaption {
+	margin-top: 10px;
 }
 
 .bag img {
