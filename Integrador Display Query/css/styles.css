@@ -5,13 +5,19 @@
 */
 * {
 	box-sizing: border-box;
+	margin: 0;
+}
+
+.container {
+	width: 90%;
+	margin: 0, auto;
 }
 
 header {
 	background: black;
 	text-align: center;
 	margin-top: 5%;
-	height: 110px;
+	padding: 10px;
 }
 
 a {
@@ -45,9 +51,8 @@ img {
 }
 
 section div.ancho {
-	margin: 9px;
-	width: 46%;
-	height: 400px;
+	width: 49.5%;
+	height: 300px;
 	display: inline-block;
 	padding: 10px; 
 }
@@ -62,7 +67,7 @@ nav ul li{
 section div.centro {
 	background: blue;
 	display: inline-block;
-	width: 93.8%;
+	width: 96%;
 	height: 100px;
 	margin: 10px;
 	padding: 10px;
@@ -70,7 +75,7 @@ section div.centro {
 
 section div.base{
 background: green;
-width: 30%;
+width: 30.5%;
 height:400px;
 display: inline-block;
 margin: 9px; 
@@ -102,10 +107,10 @@ padding: 10px;
 footer div.bottom {
 	background: yellow;
 	display: inline-block;
-	width: 94%;
+	width: 96%;
 	height: 150px;
 	margin: 10px;
-	padding: 10px;
+	padding: 20px, 5px;
 }
 
 #mapa{
@@ -118,9 +123,42 @@ footer div.bottom {
 }
 
 
-@media (max-width: 480px) {
-	nav ul li {display: block;
+@media all and (max-width: 480px) {
+	.container{ 
+	width: 100%
+	 }
 
+	#dog2 {
+		display: none;
 	}
-	
+
+	.links {
+		text-align: right;
+		position: fixed;
+		top: 20%;
+		right: 0;
+	}
+	nav ul li {
+		display: block;
+		margin: 0;
+	}
+
+	footer, section { 
+	margin: 10px; 
+	}
+
+	.margen div.pink {		
+		display:block;
+		width:100%;
+	}	
+
+	.blue img {
+		display:none;
+		width: 100%;
+	}
+
+	.margen div.green {
+		display:none;
+		width: 100%;
+	}
 }

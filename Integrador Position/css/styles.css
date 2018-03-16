@@ -1,0 +1,57 @@
+*{
+	box-sizing: border-box;
+	margin-left: 10px;
+}
+
+article{
+	width: 264px;
+	height: 264px;
+}
+
+.pink {
+	background-color: #ff6666;
+}
+
+.grey {
+	background-color: #eeeeee;
+}
+
+article.pink{
+	display: inline-block;
+}
+
+article.grey {
+	display: inline-block;
+}
+
+.primera {
+	position: relative;
+}
+
+.segunda{
+	position: relative;
+}
+
+.tercera {
+	position: relative;
+}
+
+img#cross1 {
+	position: absolute;
+	left: 280px;
+	top:10px;
+}
+
+img#cross2 {
+	position: absolute;
+	left: 0px;
+	top:10px;
+}
+
+img#circle {
+	width: 250px;
+	height: 250px;
+	position: absolute;
+	right: 530px;
+	top:7px;
+}

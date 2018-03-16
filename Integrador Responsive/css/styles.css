@@ -1,0 +1,70 @@
+* {
+	margin: 0;
+	box-sizing: border-box;
+	padding: 0;
+}
+
+body {
+	padding-top: 20px;
+	font-family:  sans-serif;
+}
+
+
+.container{
+	width: 80%;
+	padding: 10px;
+}
+
+
+img#menu {
+	width: 30px;
+	height: 30px;
+	float: right;
+}
+
+ul li {
+	display: inline-block;
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: blue;
+}
+
+a.negro {
+color: black;
+}
+
+.main{
+	width:90%;
+	margin:0 auto;
+	text-align: center;
+}
+
+figure {
+	display: inline-block;
+	margin:40px;
+	text-align:center;
+}
+
+.bag img {
+	width: 150px;
+	height: 150px;
+}
+
+@media (max-width:480px) and (orientation:portrait) {
+	.line {
+		position:relative;
+		top:15px;
+	}
+
+	.bag {
+		display:block;
+	}
+
+	.bag img {
+		width: 100px;
+		height: 100px;
+	}
+}
