@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;*/
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url(../img/fondo.jpg);
+	background-repeat: repeat-y;
+	background-size: cover;
+}
+
+.mainContainer {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+
+	}
+
+.side {
+	width: 20%;
+	background: pink;
+	display: flex;
+	flex-direction: column;
+}
+
+.principal {
+	width: 70%;
+	background: lightpink;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+
+}
+
+.icono {
+	display: flex;
+	justify-content: center;
+}
+
+#logo {
+ width: 150px;
+ height: 150px;
+ padding: 5px;
+ }
+
+div.Orden {
+	padding: 20px;
+}
+
+div.selector{
+	padding: 20px;
+}
+
+.album {
+	width: 250px;
+	height: 250px;
+	margin: 20px;
+}
+
+figcaption{
+	text-align: center;
+}
+
+ul {
+	list-style: none;
+	font-family: Pacifico, "cursive"
+}
+
+p {
+	font-family: Pacifico, "cursive";
+	font-weight: bold;
+}
+
+figure:hover {
+    background-color: lightgrey;
+}
+
+.lista {
+	position: relative;
+}
+
+.envio {
+	position: absolute;
+	top: 30px;
+	left: 25px;
+	width: 30px;
+	height: 30px;
+}
+

@@ -1,0 +1,66 @@
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+.mainContainer {
+	background-color: black;
+	width: 650px;
+}
+
+p {
+	color: #fff;
+	font-size: 30px;
+	font-family: arial black, "sans serif";
+	padding: 10px;
+}
+
+.link {
+	background-color: lightgrey;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+	margin: 3px 4px;
+	font-family: arial, "sans serif";
+	font-size: 0.8em;
+}
+
+.izquierda {
+	display: flex;
+	justify-content: flex-start;
+}
+
+.centro {
+	display: flex;
+	justify-content: center;
+}
+
+.derecha {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.entre {
+	display: flex;
+	justify-content: space-between;
+}
+
+.alrededor {
+	display: flex;
+	justify-content: space-around;
+}
+
+a.negro {
+	background-color: black;
+	color: lightgrey;
+}
+
+.vertical {
+	display: flex;
+	flex-direction: column;
+}

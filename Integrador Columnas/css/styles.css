@@ -1,0 +1,73 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.mainContainer {
+	margin: 30px;
+	
+}
+
+img {
+	display: block;
+	margin-top: 10px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 200px;
+	width: 150px;
+}
+
+.titulo {
+	border: solid;
+	border-color: lightgrey;
+	font-family: Arial;
+	font-size: 2em;
+	color: black;
+	width: 900px;
+	padding: 5px;
+	display: flex;
+	justify-content: flex-end;
+	background: lightblue;
+}
+
+.smallContainer {
+	border: solid;
+	border-color: lightgrey;
+	width: 900px;
+	display: flex;	
+	flex-direction: row;
+}
+
+.columna {
+	/*width: 33,33%;
+	height: 1000px;
+	border-style: solid; */
+
+}
+
+.Paris {
+	background: orange;
+}
+
+.Congo {
+	background: lightgreen;
+}
+
+.Gaza {
+	background: yellow;
+}
+
+h2 {
+	text-align: center;
+	padding: 5px;
+}
+
+p {
+	text-align: justify;	
+	padding: 20px;
+}
+
+div.columna {
+	width: 300px;
+}
