@@ -1,0 +1,361 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;*/
+	box-sizing: border-box;
+}
+
+
+.mainContainer {
+	width: 98%;
+}
+/*---------------------------Header-------------------------------*/
+
+header {
+	width: 70%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	font-family: Indie Flower, "cursive";
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+ul li {
+	display: inline;
+	margin: 20px;
+}
+
+ul{
+	text-align: left;
+	margin-top: 25px;
+}
+
+
+/*---------------------------Header-------------------------------*/
+
+/*---------------------------Articulos Arriba-------------------------------*/
+
+section.articulos {
+	width: 98%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-left: 20px;
+
+}
+
+.xl {
+	width: 230px;
+	height: 400px;
+	margin: 3px;
+
+}
+
+.overlay {
+	position:absolute;
+	bottom: 80px;
+	left: 629px;
+	right: 0;
+	background-color: lightgrey; 
+	overflow: hidden;
+	width: 230px;
+	height: 0;
+	transition: .5s ease;
+}
+
+.hover:hover .overlay {
+	height: 20%;
+	cursor: pointer;
+}
+
+
+
+.articulos1{
+	background-image: url("../img/articulo.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
+	height: 250px;
+	width: 98%;
+	margin-top: 10px;
+	display: flex;
+	justify-content: center;
+	margin-left: 20px;
+}
+
+
+
+.meme {
+	width: 100%;
+	color: black;
+	font-size: 15px;
+	/*position: absolute;
+	top:50%;
+	left: 55%;*/
+
+}
+
+/*---------------------------Articulos Arriba-------------------------------*/
+
+/*---------------------------Articulos Peq-------------------------------*/
+
+.artPeq {
+	width: 70%;
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+
+}
+
+.img10{
+	width: 400px;
+	height: 300px;
+	border-radius: 25px;
+}
+
+.linea2{
+	display: flex;
+	justify-content: center;
+}
+
+.txt1 {
+	color: grey;
+	font-size: 0.8em;
+	margin-right: 50px;
+}
+/*---------------------------Articulos Peq-------------------------------*/
+
+
+/*---------------------------Articulos Chicos-------------------------------*/
+
+.artChico{
+	width: 70%;
+	margin-top: 10px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+.peque {
+	display: inline-block;
+}
+
+.med {
+	width: 270px; 
+	height: 150px;
+	border-radius: 25px;
+	margin: 5px;
+}
+
+.blanco {
+	position: relative;
+}
+
+.texto {
+	font-family: Indie Flower, "cursive";
+	width: 160px;
+	background-color: white;
+	border-radius: 25px;
+	position: absolute;
+	top: 72.33px;
+	right: 65px;
+}
+
+/*---------------------------Articulos Chicos-------------------------------*/
+
+/*---------------------------Articulos Centro-------------------------------*/
+ .centro {
+ 	width: 70%;
+	margin-top: 30px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center; 
+	/*display: flex;
+	justify-content: center; */
+ }
+
+ .centrar {
+ 	display: flex;
+
+ }
+
+ .video {
+ 	display: flex;
+ 	flex-direction: column;
+ }
+
+.caption {
+display: flex;
+}
+
+
+.profcard {
+	width: 270px;
+	/* border: solid; */	
+	padding: 0, 10px;
+	margin-left: 15px;
+}
+
+ .sobre {
+ 	background: #fee2d9;
+ 	width: 270px;
+ 	height: 30px;
+ 	display: flex;
+ 	justify-content: center;
+ 	align-items: center;
+  }
+
+#perfil{
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+	height: 130px; 
+	width: 130px;
+	border-radius: 65px;
+	/*border-style:solid;
+	border-width: 3px; 
+	border-color: lightgrey;*/
+	align-self: middle;	
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+#nombre{
+	color: orange;
+	text-align: center;
+}
+
+#descripcion{ 
+	font-family: Arial, "sans-serif";
+	color: #C7C7C7;
+	width: 270px;
+	font-size: 1em;
+	display: block;
+	margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 10px;
+
+} 
+
+
+/*---------------------------Articulos Centro-------------------------------*/
+
+/*---------------------------Articulos Abajo-------------------------------*/
+.abajo {
+	width: 70%;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+}
+
+.alone {
+	margin-top: 20px;
+	display: flex;
+}
+.ultimas {
+	width: 300px;
+	height: 180px;
+	border-radius: 25px;
+}
+
+
+.mini {
+	width: 300px;
+	margin-left: 15px;
+	padding: 10px;
+}
+
+.linea {
+	display: flex;
+	justify-content: space-between;
+}
+.red3 {
+	width: 15px;
+	height: 15px;
+}
+.txt {
+	color: grey;
+	font-size: 0.8em;
+}
+h5 {
+	text-align: justify;
+	color: #c7c7c7;
+}
+
+h2 {
+	margin-top: 20px;
+	color: grey;
+}
+
+
+.button {
+	margin-top: 10px;
+	font-weight: bold;
+    background-color: #fee2d9; 
+    border: none;
+    color: black;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    border-radius: 10px;
+}
+
+/*---------------------------Articulos Abajo-------------------------------*/
+
+
+/*---------------------------Footer-------------------------------*/
+
+
+footer {
+	margin-top: 60px;
+	width: 70%;
+	color: #C7C7C7;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+
+.centrar2 {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+}
+
+.Redes {
+	display: flex;
+
+}
+.red2 {
+	margin-right: 5px;
+	width: 15px;
+	height: 15px;
+}
+
+
+/*---------------------------Footer-------------------------------*/
+
+
+/*---------------------------H1 abajo-------------------------------*/
+.bottom {
+	width: 60%;
+	margin-top: 60px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+/*---------------------------H1 abajo-------------------------------*/
