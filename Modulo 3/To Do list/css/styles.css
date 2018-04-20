@@ -1,0 +1,40 @@
+body {
+	font-family: sans-serif;
+}
+
+#container {
+	width:600px;
+	margin:0 auto;
+	padding:10px;
+	border:2px solid rebeccapurple;
+	background-color: papayawhip;
+	background-image: url("../img/fondo.jpg");
+	background-repeat: repeat-y;
+	background-size: cover;
+}
+
+h1 {
+	text-align: center;
+	color:rebeccapurple;
+}
+
+#input {
+	color: rebeccapurple;
+}
+
+#input-container {
+	text-align: center;
+}
+
+#btnEliminar {
+	background-color: white;
+	color: red;
+	box-shadow: none;
+	border:none;
+	border: solid;
+}
+
+ul {
+	list-style: circle red;
+	
+}

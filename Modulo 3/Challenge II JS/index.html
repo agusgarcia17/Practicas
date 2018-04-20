@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Challenge 2</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="css/styles.css">
+    
+</head>
+<body>
+    <div class = "mainContainer">
+        <div class= "titulo">
+            <h1> Formulario de Inscripcion</h1>
+        </div>
+        <div class="Preguntas">
+                <form>
+                    <div>
+					    <label> Nombre </label>
+                        <input type="text" name="text" id = "nombre" class="obligatorio"> 
+                        <label class="mjeObligatorio mjeBlanco"> *</label>
+                    </div>
+
+                    <div>
+                        <label> Apellido </label>
+                        <input type="text" name="text" id = "apellido"  class="obligatorio"> 
+                        <label class="mjeObligatorio mjeBlanco"> *</label>
+                    </div>
+
+                    <div>
+                        <label> Nacionalidad </label>
+                            <select id="pais" name="Nacionalidad" class="obligatorio">
+                                <option value="" disabled selected> Seleccionar </option>
+                            </select>
+                            <label class="mjeObligatorio mjeBlanco">*</label>
+                
+                    </div>
+
+                    <div>
+                        <label> Fecha de Nacimiento </label>
+                        <input id="fechaNacimiento" type="date" name="Nacimiento"  class="obligatorio">
+                        <label class="mjeObligatorio mjeBlanco" id='mjeMayorEdad'> * </label>
+                    </div>
+
+                    <div>
+                        <label> Numero de Documento </label>
+                        <select name="Documento" id = "tipoDoc">
+                                <option value="" disabled selected> Seleccionar </option>
+                        </select>
+                        <input type="number" name="text" id = "documento" class="obligatorio"> 
+                        <label class="mjeObligatorio mjeBlanco">* </label> 
+                    </div>
+                    
+                    <div>
+                        <label> Calle </label>
+                        <input type="text" name="text" id = "calle">
+                    </div>
+
+                    <div>
+                        <label> Numero </label>
+                        <input type="text" name="text" id = "numero">
+                        <label> Piso </label>
+                        <input type="text" name="text" id = "piso">
+                        <label> Dpto </label>
+                        <input type="text" name="text" id = "dpto">
+                    </div>
+
+                    <div>
+                        <label> Provincia </label>
+                        <select name="provincia" id = "selectProvincia">
+                                <option value="-1" > Seleccionar </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label> Ciudad </label>
+                        <select name="ciudad" id = "selectCiudad">
+                                <option value="-1">Seleccione una opción</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label>Genero </label>
+                        <input type="radio" id='generoF' name="Genero" value="Femenino"> Femenino
+                        <input type="radio" id='generoM' name="Genero" value="Masculino"> Masculino
+                        <label id="mjeSexoObligatorio" class="mjeBlanco"></label>
+                    </div>
+
+                    <div>
+                        <label> Deportes </label>
+                            <ul>
+                                <li><input type="checkbox" id="cbox1" name="Futbol"> Futbol </li>
+                                <li><input type="checkbox" id="cbox2" name="Voley"> Voley </li>
+                                <li><input type="checkbox" id="cbox3" name="Hockey"> Hockey </li>
+                            </ul>
+                    </div>
+
+                    <div>
+                        <label> Altura </label>
+                        <input type="text" name="text" id = "altura">
+                        <label> Peso </label>
+                        <input type="text" name="text" id = "peso">
+                    </div>
+
+                    <div>
+                        <label> Telefono </label>
+					    <label id="mjeTelefonoObligatorio" class="mjeBlanco"></label>
+                        <input type="text" name="telefono" id = "obligatioTelefono">
+                    </div>
+                    
+                    <div>
+                        <label> Email </label> 
+                        <input class="obligatorio" id="obligatorioMail" type="text" name="email">
+                        <label class="mjeObligatorio mjeBlanco" id="mjeEmailObligatorio"></label>
+                    </div>
+                    <div>
+                        <label> Observaciones </label>
+                        </br>
+                        <input type="text" name="text" id = "Observaciones">
+                    </div>
+
+                    <input type="button" name="enviar" value="Enviar" id = 'enviar'>
+                    <input type="button" name="limpiar" value="Limpiar" id = 'btn-limpiar'>
+		    	</form>
+        </div>
+    </div>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
