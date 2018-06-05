@@ -1,0 +1,12 @@
+aplicacion (express no template sin pug) 
+
+carpeta - cliente tiene html, css, images y js
+
+carpeta - servidor/ servidor.js (sin express generator, en el cual se instalos express base. La estructura es distinta) 
+
+
+modulo buscador, se va a usar cors (modulo que permite que mi app reciba peticiones externas, js no es crossdomain, por ende no permite por defecto esto.)
+
+body.parse permite manejar el contenido del tipo jSon (sin res.render). 
+
+Servidor.js tiene 3 Get /autos /marcas /autos/:id

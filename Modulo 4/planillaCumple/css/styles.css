@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+.mainContainer, .homeContainer{
+    margin: 20px;
+    width: 90%;
+    background-color: #b085f5;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#inputs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #7e57c2;
+    height: 100px;
+}
+
+.inputs{
+    height: 30px;
+    font-family: Jua, sans-serif;
+}
+
+.imagenes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #98ee99;
+    font-family: Jua, sans-serif;
+    font-size: 1.5em;
+    color: #7e57c2;
+}
+
+h3, h1 {
+    display: flex;
+    justify-content: center;
+    font-family: Jua, sans-serif;
+
+}
+.linea{
+    display: flex;
+    margin: 20px;
+    justify-content: space-around;
+}
+
+img{
+    height: 200px;
+}
+
+img:hover{
+    transform: scale(1.15);
+}
+
+.alinearBtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+}
+
+
+#Guardar{
+    font-size: 1.5em;
+    color:whitesmoke;
+    background-color: #7e57c2;
+    height: 40px;
+    font-family: Jua, sans-serif;
+}
+
+img#imgHome{
+    width: 200px;
+    height: 250px;
+    display: flex;
+}
+
+.homeContainer{
+    height: 500px;
+}

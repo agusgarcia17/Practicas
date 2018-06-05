@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+}
+
+.mainContainer {
+    background-color: #f0e68c;
+    height: 300px;
+    width: 600px;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+}
+
+.Datos{ 
+display: flex;
+justify-content: space-around;
+align-items: center;
+flex-direction: column;
+height: 200px;
+margin: 0, auto;
+}

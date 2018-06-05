@@ -1,0 +1,241 @@
+EXPRESS!!
+a diferencia de node
+
+los parametros son con
+req.params.id
+
+var app =express();
+
+app.get('/:id,function(req,res){ //get o post
+
+res.send('El id recibido es;'+req.param.id);
+};
+
+con el objeto req.params, permite acceder a todos los parametros enviados en la url
+
+si lo mando por get
+se concatena el par,valor en la url
+
+si lo mando por post, 
+se concatena pero no lo veo.
+
+
+--------
+	Templete
+Los frameworks procesan generan html incorporan desde el lenguaje de programacion, vinculando de parte dinamica.
+
+Si quiero generar vistas dinamicas
+parte de codigo parte de script y la construccion del template (cod html interpretado y codigo dinamico en general js.)
+
+Los template tienen sintaxis particular.
+Variables con parametros. 
+Si quiero mostrar una lista de nombres cuando se lo pase al template lo voy a mostrar de una manera determinada. La sintaxis es determinada.
+
+Views - Templates
+Sintaxis y construir
+--- Jade es un template
+Template!
+Pug
+tiene HTML interpolacion de texto, 
+Hola #{user.username}!
+
+variables de amplitud "Locals! se hace referencia
+cada vez que ingresan en el template
+bucles, condicionales, inclusiones,
+ViewEngine Biblioteca de Plantillas
+
+PUg
+
+npm install --save pug
+
+configuracion en express
+
+let app =express();
+app.set("view engine","pug");
+/*..rest of the application goes here*/
+
+Cuando se instala el motor de vistas se instala para todo el proyecto.
+
+Framework!
+puedo tener mas de un layaout, no puedo tener mas de un motor de vistas
+
+homepage.pug
+html
+  body
+	h1 Hello World!
+	p Hi there,#{user.username}!
+
+app.js
+router.get("/",(req,res)=>{
+	res.render("homepage");
+	user:req.user  //comienza mi callback
+});
+
+--
+
+Todo va a estar en views/homepage.pug.
+las estructura de los frameworks no hay que romperlas.
+
+al movernos de las url voy a tener que detallar.
+
+Las vistas o los templates van a estar en el paquete de vistas.
+Se interpreta el template, se carga el html
+
+res.render es la respuesta que genero.
+	
+mime Types! 
+son las extensiones para poder incluir
+Lista de permitidos.
+Gmail no te deja incluir un js o un exe. ya que definen los archivos que va a poder manipular. Por defecto solo va a poder mostrar html.  -interpretacion directa-
+para levantar archivos que el servidor necesita tener definido para que lo incluye.
+	 
+Salida
+
+localhost:
+
+---express generator
+-----------------------
+
+homepage.pug
+	.jade
+
+js
+let numero=45
+res.render("homepage',{numero:numero}
+--renderizar! para mostrar la vista!--
+
+html.pug		vista
+h1#{numero} 		p Numero
+			n1 45
+
+
+
+------
+ver mi proyecto 23052018
+var path = require ('path') 
+modulo de node para trabajar con ellos y hacer params para parseo 
+
+--templates
+
+body
+	h1 Hello World!
+	if user != null
+		p Bienvenido, #{user.username}!
+	else
+		p Usuario desconocido!
+	p La lista de vegetables:
+	ul
+		for vegetable in vegetables
+		(((for x in array)))seria un for each
+		li x nombre
+		li = vegetable
+
+----------
+
+app.js
+
+router.get("/",(req,res)=>{
+		res.render("homepage",{
+			user:req.user,
+			vegetables:["carrot","potato",""]}
+
+
+--------
+variable de applicacion
+para que todas las vistas 
+
+posterior del login
+por ejemplo el usuario se mantiene 
+request amplio
+request wide disponible para mas de una vista
+No es a nivel aplicacion porque en la home no lo voy a usar pero si es amplia
+
+Variables que voy a utilizar mas de una ves amplia
+
+El nombre de la pagina de alcance de aplicacion!
+Si quiero que aparezca para cada resrender
+res.locals
+
+middleware. 
+una aplicacion que esta en el medio y routea procesos.
+Framworks en general tienen esta capa intermedia que define como se procesan las cosas, interfaz de trabajo
+En este caso seria apps.js que se queda con los requests y los permite definiendo como se reparten los parametros en modulos funcionales
+-----
+
+res.render mayor mente res.render por el template.
+res.send cuando tengamos un error.
+
+yo no propago los parametros si lo
+
+---------
+app.use ((req,res,next) => 
+
+//el parametro next es para empezar a pasar parametros al middleware que normalmente vienen predefinidas.
+
+res.locals.user = req.user; 
+//si quiero que el user este disponible para varios modulos a user lo defino como variable local de alcance amplio como parte del objeto res. 
+
+next(); 
+//que este disponible se pasa el control a la siguiente funcion de middleware. Para que ejecute, o quedara colgada la solicitud.
+//cuando haga un render voy a tener disponible los parametros.
+
+se define asi - es mejor guardarlo en el objeto y propagarlo
+
+app.use ((req,res,next) => 
+res.locals.user = req.user; 
+res.locals.vegetal = req.vegetal;
+res.locals. ""= req."";
+etc 
+next(); 
+*/more code code goes here...
+
+
+
+
+
+------
+
+primero armo un index de juego
+primero se define 
+armar las estructuras
+Cuales van a ser las rutas, cuales van a ser las variables. 
+primero los routers organizo por identidades.
+
+
+primero defini 2 routers bienvenido en views esta bienvenido.pug que tiene 
+p nombre 
+input --// username lo guardo como variable lo declaro con el res.locals
+button
+
+primer router*index "/", "bienvenido" 
+bienvenido.pug
+
+despues router*juego "/", "juego"
+juego.pug
+
+y despues de preguntar si el username esta, 
+pueda desplegar en juego el username pepito.
+
+si perdiste lo puedo redireccionar a /perdiste
+res.render("/".perdiste)
+
+-views-
+bienvenido.pug
+juego.pug
+perdiste.pug
+ganaste.pug
+!!!!!!!!!!!
+ranking.pug
+
+
+
+next derivo la solucion a otro modulo
+
+route no puede resolver, entonces uso el next para derivar a otro modulo
+
+
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+
+que atrape el error para que no quede mal 

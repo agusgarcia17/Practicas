@@ -1,0 +1,25 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#nombres {
+	width:200px;
+	border:1px solid black;
+}
+
+.rosa {
+	background-color: pink;
+}
+
+.celeste {
+	background-color: lightblue;
+}
+
+.amarillo {
+	background-color: #FEFF85;
+}

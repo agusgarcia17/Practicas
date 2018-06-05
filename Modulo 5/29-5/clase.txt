@@ -1,0 +1,63 @@
+next derivo la solucion a otro modulo
+
+route no puede resolver, entonces uso el next para derivar a otro modulo
+
+
+app.use(function(req, res, next) {
+  next(createError(404));
+});
+
+que atrape el error para que no quede mal 
+---------------------------------------
+locals= variables. Parametro que rendeo para generar contenido dinamico. 3 niveles, locals propios del route (modulo) que pasa la data. 2 esta variable puede usarse en varios modulos (eso con use). 3 que todos la usen, se declara como global a nivel application.  
+
+siempre que quiera defirnir algo dentro de la app, uso use. 
+
+cuando defino variables amplias, a nivel de application (es como un var, es un attributo) 
+
+app.locals.siteName="Vegetable World ";
+
+^ declaro   ^nombre de la variable 
+
+no es recomendable usar muchas variables globales de app, se genera desorden. Cada modulo deberia tener sus propias variables, xq se pueden ir modificiando las variables modulo a modulo y eso puede generar problemas. 
+
+----------------------------------------
+
+ejemplo app generator pug
+
+tiene oja de estilos - layout.pug
+
+doctype html
+html
+  head
+    title= title
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body /// empieza el body y dsp viene el block content
+    block content -- esto es lo que cambia y se carga en esta instancia. los route los renderiza. Remplazan contenido aca, en el block content. renderiza primero el layout y dsp dibuja el block content para cada uno de los contenidos. 
+
+
+todo tiene que pasar por el app.js (es el main) ahi se puede responder a las llamadas de las url especificas (/...) 
+
+
+http//misitio.com 
+
+^ app que esta en express ----app.js (tiene metodos) --- app (es una objeto y puede responder a los get/post, tiene funcion de callback y puede hacer el render (parametros, req y res) renderizo al homepage) 
+server node.
+
+Si tengo muchas funcionalidades, todas van a estar cargadas en el main. ---- app.get("/saludo")
+	--- app.get("/listado")
+
+funciona pero no es lo mejor. 
+Mejor es crear modulos funcionales 
+require("./mimodulo")
+
+crear modulos de route - agrupar las peticiones por contexto (user.js / producto.js) 
+1.requerir el modulo de route, requerir una variable. Llamar al constructor y generar una variable que es un objeto del tipo route. 
+2.Route('/', req, res
+	res. render("productos"){
+	verduras [zapallo....]
+	})
+
+app.use (ahi digo que voy a usar el modulo y se hace la vinculacion)
+
+LA APP LO UNICO QUE SABE HACER ES RESPONDER PETICIONES 
