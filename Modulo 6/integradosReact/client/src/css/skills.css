@@ -4,7 +4,7 @@
 
 .cuerpo{
     background-color: white;
-    height: 300px;
+ 
     width: 60%;
     position: absolute;
     top: 550px;
@@ -16,19 +16,25 @@
 
 .descripcion{
     width: 50%;
+    text-align: justify;
+    margin: 10px;
 }
 
 
 .progresos{
     width: 50%;
+    height: 100%;
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 20px;
+    align-items: center;
+
 }
 
 progress{
 width: 90%;
 color: seagreen;
+margin: 10px;
 }
 
 .pepe{
