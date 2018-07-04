@@ -1,0 +1,64 @@
+*{
+    font-family: 'Arial';
+}
+
+.card{
+    background-color: white;
+    height: 300px;
+    width: 60%;
+    position: absolute;
+    top: 130px;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    border: solid seagreen;
+}
+
+.profilePic{
+    height: 100%;
+    width: 45%;
+}
+
+.datos{
+    display: flex;
+}
+
+.ficha{
+    width: 55%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.key{
+    margin-left: 10px;
+}
+.redesCard{
+    background-color:  #2bbd7e;
+    width: 100%;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.iconCard{
+    width: 25px;
+    border-radius: 20px;
+  }
+  
+.iconCard:hover{
+    background-color: #69f0ae;
+  }
+  
+  #verde{
+      color: #2bbd7e
+  }
+
+  p{
+      font-size: 1em;
+      font-weight: bold;
+  }
+
+  h1, h3{
+      margin: 10px;
+    }

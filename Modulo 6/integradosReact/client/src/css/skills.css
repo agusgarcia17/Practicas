@@ -1,0 +1,38 @@
+.cuerpo{
+    background-color: whitesmoke;
+}
+
+.cuerpo{
+    background-color: white;
+    height: 300px;
+    width: 60%;
+    position: absolute;
+    top: 550px;
+    left: 20%;
+    display: flex;
+    justify-content: space-around;
+    border: solid seagreen;
+}
+
+.descripcion{
+    width: 50%;
+}
+
+
+.progresos{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+}
+
+progress{
+width: 90%;
+color: seagreen;
+}
+
+.pepe{
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+}

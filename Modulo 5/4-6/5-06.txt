@@ -1,0 +1,48 @@
+para borrar con express. 
+
+metodo DELETE. 
+
+router.delete('/:isbn', fucntion(req, res, next){
+
+
+});
+
+router.get('/delete/:isbn', function (req,res,next){
+let isbn = req.params.isbn
+let libro = books.find(function(libro){libro.isbn=isbn}) // find devuelve un objeto, segun el criterio dado. 
+books.splice(libro) // splice saca un elemento de un arreglo
+});
+
+Ambas opciones son validas. Ya tenemos un metodo que busca dentro del arreglo. 
+
+
+
+// esta funcion devuelve un objeto tipo libro o null si no lo encuentra
+function search (isbn){
+let i;
+for (i=0;i<books.lenght;i++){
+if(books[i].isbn==isbn){
+return books[i];}
+}
+return null
+}
+
+
+
+
+////////////////////////////////////////////////////// 
+router.get('/:isbn', function(req,res,next){
+
+let isbn = req.params.isbn;
+let libro = search (isbn);
+
+if(libro!=null){
+res.render('Libro', {title:....})
+}else{
+res.render('error');
+}
+});
+
+//agregar error.pug
+
+/////////////////////////////////////////////////////

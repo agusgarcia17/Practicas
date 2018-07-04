@@ -1,0 +1,21 @@
+Promises 
+
+
+.get con funciones de callback derivaban en un callback hell, por lo que nacionaron las promesas. Un objeto de js toma la llamada asincona (con la llamada callback) con 2 metodos, THEN (funcion callback{}) y CATCH (funcion callback {}). Lo que hace la promesa es esperar a que termine la funcion asincrona, y si salio todo bien, llama la funcion interna del then, y si fallo llama a catch. (como por ejemplo salga un 500 de la api o un codigo mal hecho)
+
+axios libreria que se instala en el proyecto, que se basa en promises
+
+
+//const axios = require('axios') // CommonJS
+import axios from 'axios';
+
+axios usa get/post/etc
+
+axios
+   .get('http://localhost:3000/users/listjson')
+   .then(function(res) {
+	console.log(res.data)
+})
+   .catch(function(){
+	console.log('catch')
+}) 

@@ -1,0 +1,9 @@
+extends layout
+block content
+	h1 #{title}
+	each user in users
+		ul
+			li Nombre: #{user.nombre}
+			li Apellido: #{user.apellido}
+			li Teléfono: #{user.telefono}
+			li Mail: #{user.email}

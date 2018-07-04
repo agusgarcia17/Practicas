@@ -1,0 +1,28 @@
+Controllers 
+
+
+crear una carpeta controllers
+dentro crear un archivo usersController.js
+
+const self ={}
+
+self.index = function(req, res, next) {
+    res.send('respond with a resource');
+  };
+
+module.exports = self;
+
+
+
+///en users.js de routes: 
+
+agregar variable usersController 
+
+var express = require('express');
+var router = express.Router();
+var usersController = require('../controllers/usersController')
+
+/* GET users listing. */
+router.get('/', usersController.index);
+
+module.exports = router;

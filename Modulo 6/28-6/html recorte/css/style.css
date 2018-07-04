@@ -1,0 +1,30 @@
+figure, .lista, #encabezado {
+	margin: 3%;
+}
+figcaption {
+	font-size: 0.8em
+	;
+}
+
+h6 {
+	color: grey
+}
+
+a {
+	color: #6bc7f0
+}
+
+#cuerpo {
+	font-size: 1em:;
+	font-family: georgia, "serif"
+}
+
+.bloque1 {
+	margin: 3%;
+	display:block;
+	width: 70%;
+	text-align: justify;
+}
+.capital{
+	font-size: 2em
+}
